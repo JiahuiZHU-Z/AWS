@@ -21,7 +21,6 @@ app.get('/users/:userId/:promo', function (req, res) {
         Key:{
             "userid": userId,
 			"promo":promo
-			
         }
     };
     docClient.get(params, function(err, data) {
