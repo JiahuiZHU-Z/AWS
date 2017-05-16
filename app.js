@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 app.get('/users', function (req, res) {
     
 });
-app.get('/user/:userId', function (req, res) {
+app.get('/users/:userId/:promo', function (req, res) {
     var docClient = new AWS.DynamoDB.DocumentClient();
 	
 	var userId= req.params["userid"];
