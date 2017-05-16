@@ -1,10 +1,10 @@
 {
-  "name": "AWSIBD",
+  "name": "AWSIBD_Dynamo",
   "version": "1.0.0",
   "private": true,
   "main": "app.js",
   "dependencies": {
   	"express": "*",
-  	"mysql": "latest"
+  	"aws-sdk": "*"
   }
 }
