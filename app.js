@@ -19,7 +19,9 @@ app.get('/user/:userId', function (req, res) {
     var params = {
         TableName: "users",
         Key:{
-            "userid": req.params["userId"]
+            "userid": userId,
+			"promo":promo
+			
         }
     };
     docClient.get(params, function(err, data) {
